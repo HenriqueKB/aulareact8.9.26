@@ -1,11 +1,11 @@
 import { useState } from 'react'
-
+import './main.css'
 
 function App() {
 
   return (
     <>
-     Olá Mundo 
+     <p className="text-3xl font-bold underline">Oi Mundo</p>
     </>
   )
 }
