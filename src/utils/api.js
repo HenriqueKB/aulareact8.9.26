@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 const api = axios.create({
-    baseURL: '',
+    baseURL: 'https://rickandmortyapi.com/api',
     headers: {
         'Content-Type': 'application/json',
     },
