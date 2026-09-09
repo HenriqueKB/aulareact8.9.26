@@ -35,6 +35,22 @@ const PersonagensPage = () => {
                     <PersonagemCard key={personagem.id} personagem={personagem} />
                 )}
             </div>
+            <div className="flex justify-center mt-4">
+                <button 
+                    onClick={() => setPage((prevPage) => Math.max(prevPage - 1, 1))}
+                    disabled={page === 1}
+                    className="px-4 py-2 bg-blue-500 text-white rounded mr-2 disabled:bg-gray-400"
+                >
+                    Previous
+                </button>
+                <span className="px-4 py-2">{page}</span>
+                <button 
+                    onClick={() => setPage((prevPage) => prevPage + 1)}
+                    className="px-4 py-2 bg-blue-500 text-white rounded ml-2"
+                >
+                    Next
+                </button>
+            </div>
         </div>
     )
 }
