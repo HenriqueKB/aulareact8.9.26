@@ -1,4 +1,5 @@
 Aula 8/9/26 Allan React | Componentes | Reutilizando Componentes
 
-Link repo p/upload: 
-https://github.com/HenriqueKB/aulareact8.9.26
+O que eu fiz nesta aula?
+
+Um site com react que consome a API Rick and Morty para pegar os dados, aplicamos fetch, await/async, componentização de react (PersonagemCard, PersonagemPage), useEffect e useState.

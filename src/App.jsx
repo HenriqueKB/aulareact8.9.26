@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import './main.css'
+import PersonagensPage from './pages/PersonagensPage.jsx'
 
 function App() {
-
   return (
-    <>
-     <p className="text-3xl font-bold underline">Oi Mundo</p>
-    </>
+    <PersonagensPage />
   )
 }
 
