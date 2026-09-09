@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './main.css'
+import PersonagemCard from './components/PersonagemCard.jsx'
 
 function App() {
 
