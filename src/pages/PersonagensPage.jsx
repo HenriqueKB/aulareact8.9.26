@@ -41,6 +41,8 @@ const PersonagensPage = () => {
                         <h2 className="text-xl font-bold mt-4">{personagem.name}</h2>
                         <p className="text-gray-600">Status: {personagem.status}</p>
                         <p className="text-gray-600">Espécie: {personagem.species}</p>
+                        <p className="text-gray-600">Gênero: {personagem.gender}</p>
+                        <p className="text-gray-600">Origem: {personagem.origin.name}</p>
                     </PersonagemCard>
                 )}
             </div>
