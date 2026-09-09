@@ -32,7 +32,16 @@ const PersonagensPage = () => {
             {loading && <p>Loading...</p>}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {!loading && personagens.map((personagem) => 
-                    <PersonagemCard key={personagem.id} personagem={personagem} />
+                    <PersonagemCard key={personagem.id}>
+                        <img
+                            src={personagem.image}
+                            alt={personagem.name}
+                            className="w-full h-48 object-cover rounded-t-lg"
+                        />
+                        <h2 className="text-xl font-bold mt-4">{personagem.name}</h2>
+                        <p className="text-gray-600">Status: {personagem.status}</p>
+                        <p className="text-gray-600">Espécie: {personagem.species}</p>
+                    </PersonagemCard>
                 )}
             </div>
             <div className="flex justify-center mt-4">
